@@ -19,7 +19,7 @@
 
 
     <div class="container">
-        <div class="header" id="main-header">
+        <header id="main-header">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-md-5">
                     <img src="src/img/person1.jpg" alt="">
@@ -39,7 +39,8 @@
                         <div class="p-4 bg-black">Experienced Full Stack Web Developer</div>
                         <div>
                             <div class="d-flex flex-row text-white align-items-stretch text-center">
-                                <div class="port-item p-4 bg-primary">
+                                <div class="port-item p-4 bg-primary"
+                                     data-toggle="collapse" data-target="#home">
                                     <i class="fa fa-home d-block"></i> Home
                                 </div>
                                 <div class="port-item p-4 bg-success">
@@ -56,7 +57,54 @@
                     </div>
                 </div>
             </div>
+        </header>
+
+
+
+        <!--home-->
+        <div id="home" class="collapse show">
+            <div class="card card-body bg-primary text-white py-5">
+                <h2>Welcome to my page!</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, vel?</p>
+            </div>
+            <div class="card card-body py-5">
+                <h3>My Skills</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error maxime nesciunt optio tempora, voluptates.</p>
+                <hr>
+                <h4>HTML</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:100%;"></div>
+                </div>
+                <h4>CSS</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:100%;"></div>
+                </div>
+                <h4>JavaScript</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:60%;"></div>
+                </div>
+                <h4>PhP</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:80%;"></div>
+                </div>
+                <h4>Python</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width:60%;"></div>
+                </div>
+            </div>
         </div>
+
+
+        <!--Footer-->
+        <footer id="main-footer" class="p-5 bg-dark text-white">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download Resume</a>
+                </div>
+            </div>
+        </footer>
+
+
     </div>
 
 
@@ -69,7 +117,7 @@
 
     <script src="https://cdn.ckeditor.com/4.9.1/standard/ckeditor.js"></script>
     <script>
-	CKEDITOR.replace( 'editor1' );
+//	CKEDITOR.replace( 'editor1' );
     </script>
 
 
